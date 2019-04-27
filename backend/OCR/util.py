@@ -86,9 +86,9 @@ def OrigBoxes(boxes, rW, rH, origW, origH, padding,stage = 1):
 			endX = min(origW, endX + (dX * 2))
 			endY = min(origH, endY + (dY * 2))
 		if stage == 2 :
-			startX = max(0, startX)
+			startX = max(0, startX-10)
 			startY = max(0, startY - dY)
-			endX = min(origW, endX)
+			endX = min(origW, endX + int(dX/2))
 			endY = min(origH, endY + (dY * 2))
 
 		

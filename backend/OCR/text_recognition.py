@@ -48,9 +48,9 @@ ap.add_argument("-east", "--east", type=str,
 	help="path to input EAST text detector")
 ap.add_argument("-c", "--min-confidence", type=float, default=0.9,
 	help="minimum probability required to inspect a region")
-ap.add_argument("-w", "--width", type=int, default=320,
+ap.add_argument("-w", "--width", type=int, default=288,
 	help="nearest multiple of 32 for resized width")
-ap.add_argument("-e", "--height", type=int, default=320,
+ap.add_argument("-e", "--height", type=int, default=288,
 	help="nearest multiple of 32 for resized height")
 ap.add_argument("-p", "--padding", type=float, default=0.095,
 	help="amount of padding to add to each border of ROI")
@@ -83,9 +83,9 @@ for i, j in enumerate(init_results):
 		A_Y = min(init_results[i+1][0][1], j[0][1]) 					# StartY of the bigger box
 		B_X = max(init_results[i+1][0][2], j[0][2])               					# endX of the bigger box
 		B_Y = max(init_results[i+1][0][3], j[0][3])
-		roi = orig[A_Y:B_Y, A_X:B_X]
-		plt.imshow(roi)
-		plt.show()
+		#roi = orig[A_Y:B_Y, A_X:B_X]
+		#plt.imshow(roi)
+		#plt.show()
 		size_new = abs(B_Y-A_Y)*abs(B_X-A_X)
 		init_results[i+1]=tuple(((A_X, A_Y, B_X, B_Y), size_new))
 # sort bounding boxes according to size
