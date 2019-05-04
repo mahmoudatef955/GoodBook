@@ -15,7 +15,7 @@ ___
 
 ## Image Processing
 
-here we simply merge the bounding boxes into a larger one
+we simply merge the bounding boxes into a larger one
 most probably it will be the title
 ![Figure_3](https://user-images.githubusercontent.com/26282714/57181460-5dd58400-6e94-11e9-8538-f2028d579e58.png)
 
@@ -23,7 +23,7 @@ ___
 
 ## Text Detection
 
-here we only the title image to EAST
+we apply only the title image to EAST
 ![Figure_1](https://user-images.githubusercontent.com/26282714/57181510-097ed400-6e95-11e9-8e5b-2e8f7f12a01d.png)
 
 ___
@@ -41,7 +41,7 @@ ___
 
 ## Text Processing
 
-here we applied some simple text processing methods:</br>
+we applied some simple text processing methods:</br>
     -removing punctuation. </br>
     -removing single characters from the list of results.</br>
     -removing duplication.</br>
